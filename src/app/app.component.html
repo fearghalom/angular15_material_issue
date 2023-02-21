@@ -1,7 +1,17 @@
 <h1>Test Spinner Animation</h1>
 <br/>
 <div class="container">
-  <button mat-raised-button [class.spinner]='enabled' (click)="onClick()">
-    Toggle
-  </button>
+  <div>
+    <mat-label>Material Button:</mat-label>
+    <button mat-raised-button [class.spinner]='matButtonSpinnerEnabled' (click)="onMatButtonClick()">
+      Toggle
+    </button>
+  </div>
+  <br/>
+  <div>
+    <mat-label>Simple HTML Button:</mat-label>
+    <button class="simple-button" [class.spinner]='simpleButtonSpinnerEnabled' (click)="onSimpleButtonClick()">
+      Toggle
+    </button>
+  </div>
 </div>

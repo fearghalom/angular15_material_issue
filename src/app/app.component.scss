@@ -1,13 +1,28 @@
 .container {
   margin-bottom: 10px;
 
-  text-transform: uppercase;
-
-  .mat-raised-button:not([disabled]) {
+  .mat-raised-button{
     color: white;
     background-color: #0076ce;
   }
+
+  mat-label {
+    padding: 5px;
+  }
+
+  .simple-button {
+    color: white;
+    background-color: dimgrey;
+    padding: 10px;
+    position: relative;
+  }
+
+  .space{
+    display:inline-block;
+    width: 50px;
+  }
 }
+
 @keyframes spinner {
   to {
     transform: rotate(360deg);

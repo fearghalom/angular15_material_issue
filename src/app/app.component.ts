@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  enabled = false;
+  matButtonSpinnerEnabled = false;
+  simpleButtonSpinnerEnabled = false;
 
-  onClick(): void {
-    this.enabled = !this.enabled;
+  onMatButtonClick(): void {
+    this.matButtonSpinnerEnabled = !this.matButtonSpinnerEnabled;
+  }
+
+  onSimpleButtonClick(): void {
+    this.simpleButtonSpinnerEnabled = !this.simpleButtonSpinnerEnabled;
   }
 }
