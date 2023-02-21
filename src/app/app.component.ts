@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular15_latest';
+  enabled = false;
+
+  onClick(): void {
+    this.enabled = !this.enabled;
+  }
 }
